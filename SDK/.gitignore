@@ -1,0 +1,10 @@
+if (-not (Test-Path "SDK\.gitignore")) {
+@'
+.venv/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+'@ | Set-Content -Encoding utf8 "SDK\.gitignore"
+}
